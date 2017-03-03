@@ -1,4 +1,4 @@
-#sierra_net
+#sierra_net driver with IPv6 and IPV4V6 (Dual-Stack)
 
 This is a modified version of the **sierra_net** driver for Linux that adds support for **IPv6** and **IPV4V6** (Dual-Stack) Link Sense Indications, written by **Stefan Brüns** on 2017-02-07.
 
