@@ -38,7 +38,7 @@ The repository includes a precompiled driver for Raspberry Pi ARMv7, which was b
 3. Install **sierra_net.ko** driver
 
       ```
-      make install
+      sudo make install
       ```
  
  
@@ -88,5 +88,5 @@ The repository includes a precompiled driver for Raspberry Pi ARMv7, which was b
 5. Install **sierra_net.ko** driver
 
       ```
-      make install
+      sudo make install
       ```
