@@ -49,11 +49,11 @@ The repository includes a precompiled driver for Raspberry Pi ARMv7, which was b
       tar -xvzf sierra_net.rpi2.tar.gz
       ```
 
-   2. **Raspberry Pi 3**
+   3. **Raspberry Pi 3**
 
-      ```
-      tar -xvzf sierra_net.rpi3.tar.gz
-      ```
+      ```
+      tar -xvzf sierra_net.rpi3.tar.gz
+      ```
 
 4. Install **sierra_net.ko** driver
 
