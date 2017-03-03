@@ -20,7 +20,7 @@ debug:
 	@echo "NETDIR      = "$(NETDIR)
 	@echo "PWD         = "$(PWD)
 	@echo
-	@ls -al $(NETDIR)/$(drv)
+	@ls -al $(NETDIR)/$(drv)*
 	@echo
 
 build: compile
