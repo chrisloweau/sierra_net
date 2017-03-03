@@ -27,8 +27,8 @@ build: compile
 
 compile:
 	@echo "-----------------------------------------------------"
-	@echo "Compiling "$(src)
-	$(MAKE) -C $(BUILDDIR) SUBDIRS=$(PWD) "obj-m=$(obj-m)" modules
+	@echo "Compiling "$(srcs)
+	@$(MAKE) -C $(BUILDDIR) SUBDIRS=$(PWD) "obj-m=$(obj-m)" modules
 	@echo "-----------------------------------------------------"
 
 install:
