@@ -23,70 +23,70 @@ The repository includes a precompiled driver for Raspberry Pi ARMv7, which was b
 
 1. Install **Git**
 
-      ```
-      sudo apt-get install git -y
-      ```
+   ```
+   sudo apt-get install git -y
+   ```
       
 2. Download **sierra_net** repository
 
-      ```
-      cd ~
-      git clone https://github.com/chrisloweau/sierra_net.git
-      cd ~/sierra_net
-      ```
+   ```
+   cd ~
+   git clone https://github.com/chrisloweau/sierra_net.git
+   cd ~/sierra_net
+   ```
  
 3. Install **sierra_net.ko** driver
 
-      ```
-      sudo make install
-      ```
+   ```
+   sudo make install
+   ```
  
  
 ##How to Compile the Driver##
 
 1. Install **Git**
 
-      ```
-      sudo apt-get install git -y
-      ```
+   ```
+   sudo apt-get install git -y
+   ```
 
 2. Download **sierra_net** repository
 
-      ```
-      cd ~
-      git clone https://github.com/chrisloweau/sierra_net.git
-      cd ~/sierra_net
-      ```
+   ```
+   cd ~
+   git clone https://github.com/chrisloweau/sierra_net.git
+   cd ~/sierra_net
+   ```
 
 3. Install **Raspberry Pi Kernel Source**
 
-      As this is a kernel driver, you will need to install the Raspberry Pi kernel
-      source before you can compile the source code. The easiest way to obtain this
-      is to use the [Raspberry Pi Kernel Source Installer](https://github.com/notro/rpi-source) tool.
+   As this is a kernel driver, you will need to install the Raspberry Pi kernel
+   source before you can compile the source code. The easiest way to obtain this
+   is to use the [Raspberry Pi Kernel Source Installer](https://github.com/notro/rpi-source) tool.
 
-      _Prerequisite:_
+   _Prerequisite:_
       
-      ```
-      sudo apt-get install bc
-      ```
+   ```
+   sudo apt-get install bc
+   ```
       
-      _Install Commands:_
+   _Install Commands:_
       
-      ```
-      sudo wget https://raw.githubusercontent.com/notro/rpi-source/master/rpi-source -O /usr/bin/rpi-source
-      sudo chmod +x /usr/bin/rpi-source
-      /usr/bin/rpi-source -q --tag-update
-      rpi-source
-      ```
+   ```
+   sudo wget https://raw.githubusercontent.com/notro/rpi-source/master/rpi-source -O /usr/bin/rpi-source
+   sudo chmod +x /usr/bin/rpi-source
+   /usr/bin/rpi-source -q --tag-update
+   rpi-source
+   ```
 
 4. Compile **sierra_net.c** source
 
-      ```
-      make compile
-      ```
+   ```
+   make compile
+   ```
 
 5. Install **sierra_net.ko** driver
 
-      ```
-      sudo make install
-      ```
+   ```
+   sudo make install
+   ```
