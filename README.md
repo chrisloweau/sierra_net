@@ -1,7 +1,7 @@
 #sierra_net
 
 This is a modified version of the sierra_net driver for Linux that adds support
-for IPv6 and Dual-Stack Link Sense Indications, by Stefan Brüns on 2017-02-07.
+for IPv6 and Dual-Stack Link Sense Indications, by [Stefan Brüns](stefan.bruens@rwth-aachen.de) on 2017-02-07.
 
 https://patchwork.kernel.org/patch/9559067/
 
