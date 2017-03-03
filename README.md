@@ -17,7 +17,32 @@ This implementation has **two** minor modifications to allow it to be compiled f
 2. Commented out **Line 710:** _'struct net_device' has no member named 'max_mtu' in function 'sierra_net_bind'_.
 
 
-##How to Compile this Driver Yourself##
+##How to Install the Precompiled Driver##
+
+The repository includes a precompiled driver for Raspberry Pi ARMv7, which was built against the 4.4.38-V7+ kernel source. To install this driver, use the following instructions.
+
+1. Install **Git**
+
+      ```
+      sudo apt-get install git -y
+      ```
+      
+2. Download **sierra_net** repository
+
+      ```
+      cd ~
+      git clone https://github.com/chrisloweau/sierra_net.git
+      cd ~/sierra_net
+      ```
+ 
+3. Install **sierra_net.ko** driver
+
+      ```
+      make install
+      ```
+ 
+ 
+##How to Compile the Driver##
 
 1. Install **Git**
 
@@ -25,11 +50,12 @@ This implementation has **two** minor modifications to allow it to be compiled f
       sudo apt-get install git -y
       ```
 
-2. Download **sierra_net** Repository
+2. Download **sierra_net** repository
 
       ```
       cd ~
       git clone https://github.com/chrisloweau/sierra_net.git
+      cd ~/sierra_net
       ```
 
 3. Install **Raspberry Pi Kernel Source**
@@ -38,13 +64,13 @@ This implementation has **two** minor modifications to allow it to be compiled f
       source before you can compile the source code. The easiest way to obtain this
       is to use the [Raspberry Pi Kernel Source Installer](https://github.com/notro/rpi-source) tool.
 
-      Prerequisite:
+      _Prerequisite:_
       
       ```
       sudo apt-get install bc
       ```
       
-      Install Commnands:
+      _Install Commands:_
       
       ```
       sudo wget https://raw.githubusercontent.com/notro/rpi-source/master/rpi-source -O /usr/bin/rpi-source
@@ -53,4 +79,14 @@ This implementation has **two** minor modifications to allow it to be compiled f
       rpi-source
       ```
 
+4. Compile **sierra_net.c** source
 
+      ```
+      make compile
+      ```
+
+5. Install **sierra_net.ko** driver
+
+      ```
+      make install
+      ```
