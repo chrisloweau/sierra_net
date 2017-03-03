@@ -1,6 +1,6 @@
-src := sierra_net.c
-obj-m := $(src:%.c=%.o)
-drv := $(src:%.c=%.ko)
+srcs := sierra_net.c
+obj-m := $(srcs:%.c=%.o)
+drv := $(srcs:%.c=%.ko)
 
 MODULE_ROOT:= /lib/modules/$(shell uname -r)
 BUILDDIR := $(MODULE_ROOT)/build
