@@ -12,9 +12,9 @@ PWD := $(shell pwd)
 all: help
 
 debug:
-        @echo "src         = "$(src)
-        @echo "obj-m       = "$(obj-m)
-        @echo "drv         = "$(drv)
+	@echo "src         = "$(src)
+	@echo "obj-m       = "$(obj-m)
+	@echo "drv         = "$(drv)
         @echo "MODULE_ROOT = "$(MODULE_ROOT)
         @echo "BUILDDIR    = "$(BUILDDIR)
         @echo "NETDIR      = "$(NETDIR)
