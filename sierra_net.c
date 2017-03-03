@@ -643,7 +643,7 @@ static u32 sierra_net_get_link(struct net_device *net)
 	return sierra_net_get_private(dev)->link_up && netif_running(net);
 }
 
-static const struct ethtool_ops sierra_net_ethtool_ops = {
+ static const struct ethtool_ops sierra_net_ethtool_ops = {
 	.get_drvinfo = sierra_net_get_drvinfo,
 	.get_link = sierra_net_get_link,
 	.get_msglevel = usbnet_get_msglevel,
@@ -684,7 +684,7 @@ static int sierra_net_bind(struct usbnet *dev, struct usb_interface *intf)
 	u8	numendpoints;
 	u16	fwattr = 0;
 	int	status;
-	struct ethhdr *eth;
+	/* struct ethhdr *eth; */
 	struct sierra_net_data *priv;
 	static const u8 sync_tmplate[sizeof(priv->sync_msg)] = {
 		0x00, 0x00, SIERRA_NET_HIP_MSYNC_ID, 0x00};
