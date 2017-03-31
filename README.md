@@ -1,4 +1,4 @@
-#sierra_net driver with IPv6 and IPV4V6 (Dual-Stack)
+# sierra_net driver with IPv6 and IPV4V6 (Dual-Stack)
 
 This is a modified version of the **sierra_net** driver for Linux that adds support for **IPv6** and **IPV4V6** (Dual-Stack) Link Sense Indications, written by **Stefan Brüns** on 2017-02-07.
 
@@ -8,7 +8,7 @@ https://github.com/0day-ci/linux/blob/28bed2ba87fdf5cce38580642743878de24d1734/d
 
 Stefan has submitted the update for inclusion with later kernel releases, and when accepted this code will become deprecated.
 
-##Changes for Raspberry Pi##
+## Changes for Raspberry Pi
 
 This implementation has **two** minor modifications to allow it to be compiled for the Raspberry Pi:
 
@@ -16,7 +16,7 @@ This implementation has **two** minor modifications to allow it to be compiled f
 
 2. Commented out **Line 710:** _'struct net_device' has no member named 'max_mtu' in function 'sierra_net_bind'_.
  
-##How to Compile the Driver##
+## How to Compile the Driver
 
 1. Install **Git**
 
