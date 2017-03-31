@@ -15,51 +15,6 @@ This implementation has **two** minor modifications to allow it to be compiled f
 1. Commented out **Line 687:** _unused variable 'eth' in function 'sierra_net_bind'_; and
 
 2. Commented out **Line 710:** _'struct net_device' has no member named 'max_mtu' in function 'sierra_net_bind'_.
-
-
-##How to Install the Precompiled Driver##
-
-The repository includes a precompiled driver for Raspberry Pi ARMv7, which was built against the 4.4.38-V7+ kernel source. To install this driver, use the following instructions.
-
-1. Install **Git**
-
-   ```
-   sudo apt-get install git -y
-   ```
-      
-2. Download **sierra_net** repository
-
-   ```
-   cd ~
-   git clone https://github.com/chrisloweau/sierra_net.git
-   cd ~/sierra_net
-   ```
-
-3. Extract **sierra_net** driver
-
-   Extract the precompiled driver.
-
-   1. **Raspberry Pi 1 / Zero**
-
-      _Precompiled driver not currently included in repository._
-
-   2. **Raspberry Pi 2**
-
-      ```
-      tar -xvzf sierra_net.rpi2.tar.gz
-      ```
-
-   3. **Raspberry Pi 3**
-
-      ```
-      tar -xvzf sierra_net.rpi3.tar.gz
-      ```
-
-4. Install **sierra_net.ko** driver
-
-   ```
-   sudo make install
-   ```
  
 ##How to Compile the Driver##
 
