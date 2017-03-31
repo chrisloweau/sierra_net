@@ -18,21 +18,7 @@ This implementation has **two** minor modifications to allow it to be compiled f
  
 ## How to Compile the Driver
 
-1. Install **Git**
-
-   ```
-   sudo apt-get install git -y
-   ```
-
-2. Download **sierra_net** repository
-
-   ```
-   cd ~
-   git clone https://github.com/chrisloweau/sierra_net.git
-   cd ~/sierra_net
-   ```
-
-3. Install **Raspberry Pi Kernel Source**
+1. Install **Raspberry Pi Kernel Source**
 
    As this is a kernel driver, you will need to install the Raspberry Pi kernel
    source before you can compile the source code. The easiest way to obtain this
@@ -51,6 +37,20 @@ This implementation has **two** minor modifications to allow it to be compiled f
    sudo chmod +x /usr/bin/rpi-source
    /usr/bin/rpi-source -q --tag-update
    rpi-source
+   ```
+
+2. Install **Git**
+
+   ```
+   sudo apt-get install git -y
+   ```
+
+3. Download **sierra_net** repository
+
+   ```
+   cd ~
+   git clone https://github.com/chrisloweau/sierra_net.git
+   cd ~/sierra_net
    ```
 
 4. Compile **sierra_net.c** source
