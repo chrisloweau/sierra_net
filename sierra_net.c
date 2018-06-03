@@ -24,7 +24,7 @@
  * along with this program; if not, see <http://www.gnu.org/licenses/>.
  */
 
-#define DRIVER_VERSION "v.2.0"
+#define DRIVER_VERSION "v.2.1"
 #define DRIVER_AUTHOR "Paxton Smith, Matthew Safar, Rory Filer"
 #define DRIVER_DESC "USB-to-WWAN Driver for Sierra Wireless modems"
 static const char driver_name[] = "sierra_net";
@@ -648,9 +648,9 @@ static u32 sierra_net_get_link(struct net_device *net)
 	.get_link = sierra_net_get_link,
 	.get_msglevel = usbnet_get_msglevel,
 	.set_msglevel = usbnet_set_msglevel,
-	.get_settings = usbnet_get_settings,
-	.set_settings = usbnet_set_settings,
 	.nway_reset = usbnet_nway_reset,
+	.get_link_ksettings = usbnet_get_link_ksettings,
+	.set_link_ksettings = usbnet_set_link_ksettings,
 };
 
 static int sierra_net_get_fw_attr(struct usbnet *dev, u16 *datap)
