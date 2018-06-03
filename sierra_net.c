@@ -24,7 +24,7 @@
  * along with this program; if not, see <http://www.gnu.org/licenses/>.
  */
 
-#define DRIVER_VERSION "v.2.1"
+#define DRIVER_VERSION "v.2.0"
 #define DRIVER_AUTHOR "Paxton Smith, Matthew Safar, Rory Filer"
 #define DRIVER_DESC "USB-to-WWAN Driver for Sierra Wireless modems"
 static const char driver_name[] = "sierra_net";
